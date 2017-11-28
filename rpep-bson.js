@@ -1,16 +1,10 @@
-var msgpack = require("msgpack-lite")
+var bson = new (require("bson"))()
 
 module.exports = {
     serialize: function(javascriptObject) {
-        return msgpack.encode(javascriptObject)
+        return bson.serialize({x:javascriptObject}) // apparently bson can only handle object as top-level entities... that kinda sucks
     },
     deserialize: function(serializedObject) {
-        // not sure if this is the right place to do this, but without it, deserialization fails for browser websockets
-        // should this be done in the ws.browser transport module, instead?
-        if(serializedObject instanceof ArrayBuffer) {
-            serializedObject = new Uint8Array(serializedObject)
-        }
-        
-        return msgpack.decode(serializedObject)
+        return bson.deserialize(serializedObject).x
     }
 }

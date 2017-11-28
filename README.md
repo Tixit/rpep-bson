@@ -2,7 +2,7 @@
 `rpep-msgpack`
 =====
 
-This is a [BSON](http://bsonspec.org/) serialization for [rpep.js](https://github.com/Tixit/rpep.js). RPEP is a simple, light-weight protocol for request-response and stream-event style communication between peers.
+This is a [BSON](http://bsonspec.org) serialization for [rpep.js](https://github.com/Tixit/rpep.js) using [mongodb/js-bson](https://github.com/mongodb/js-bson). RPEP is a simple, light-weight protocol for request-response and stream-event style communication between peers.
 
 Install
 =======

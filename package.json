@@ -20,7 +20,7 @@
     "decode"
   ],
   "dependencies": {
-    "msgpack-lite": "*"
+    "bson": "*"
   },
   "peerDependencies": {
     "rpep": "*"
