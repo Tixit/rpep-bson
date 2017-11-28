@@ -1,0 +1,37 @@
+{
+  "name": "rpep-bson",
+  "version": "1.0.0",
+  "main": "rpep-bson.js",
+  "description": "BSON serialization for rpep.js",
+  "keywords": [
+    "rpc",
+    "event",
+    "protocol",
+    "communication",
+    "messaging",
+    "zeromq",
+    "zmq",
+    "0mq",
+    "socket",
+    "stream",
+    "BSON",
+    "serialization",
+    "encode",
+    "decode"
+  ],
+  "dependencies": {
+    "msgpack-lite": "*"
+  },
+  "peerDependencies": {
+    "rpep": "*"
+  },
+  "devDependencies": {
+    "build-modules": "2",
+    "deadunit": "*",
+    "rpep": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Tixit/rpep-bson"
+  }
+}
